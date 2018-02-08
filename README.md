@@ -1,7 +1,9 @@
 # Retweetr
 
 ## Introduction
-Retweetr is a simple database-free PHP twitter bot which offers multi-account retweeting. You can retweet a single tweet across multiple accounts simultaneously within a few minutes of set-up. Twitters API guidelines (at the time of writing this: 08/02/2018) suggest that automated retweeting is permitted as long as it's not used aggressively or spammy. Automated Liking however is against the terms and thus not included in this app.
+Retweetr is a simple database-free PHP twitter bot which offers multi-account retweeting. You can retweet a single tweet across multiple accounts simultaneously within a few minutes of set-up. 
+
+Twitters API guidelines (at the time of writing this: 08/02/2018) suggest that automated retweeting is permitted as long as it's not used aggressively or spammy. Automated "Liking" however, is against the terms and thus not included in this app.
 
 ![Preview of Retweetr](https://i.imgur.com/NAWpqhW.png)
 
