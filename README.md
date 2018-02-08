@@ -5,7 +5,7 @@ Retweetr is a simple database-free PHP twitter bot which offers multi-account re
 
 Twitters API guidelines (at the time of writing this: 08/02/2018) suggest that automated retweeting is permitted as long as it's not used aggressively or spammy. Use at your own discretion.
 
-![Preview of Retweetr](https://i.imgur.com/VxqEVM3.png)
+![Preview of Retweetr](https://i.imgur.com/OMYfHBk.png)
 
 ## Setup
 1. Download or clone this repository onto a local or hosted web server running PHP
