@@ -3,6 +3,8 @@
 ## Introduction
 Retweetr is a simple database-free PHP twitter bot which offers multi-account retweeting. You can retweet a single tweet across multiple accounts simultaneously within a few minutes of set-up.
 
+![Preview of Retweetr](https://i.imgur.com/NAWpqhW.png)
+
 ## Setup
 1. Download or clone this repository onto a local or hosted web server running PHP
 2. Create a twitter app from each account that you plan to retweet from at https://apps.twitter.com/
