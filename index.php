@@ -33,7 +33,10 @@ if (!empty($_POST['username'])) {
 		<br>
 
 		<?php if(!empty($_POST['username'])) : ?>
-			Showing tweets by <a href="https://twitter.com/<?=$_POST['username']; ?>" target="_blank">@<?=$_POST['username']; ?></a>
+			<p class="text-center text-danger lead">Clicking Like or Retweet will perform the action on all of your accounts!</p>
+			<p class="small">
+				Showing tweets by <a href="https://twitter.com/<?=$_POST['username']; ?>" target="_blank">@<?=$_POST['username']; ?></a>
+			</p>
 		<?php endif; ?>
 		<ul class="list-group">
 			<?php foreach ($TweetFetcher->get() as $tweet) : ?>
