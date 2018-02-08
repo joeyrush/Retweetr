@@ -22,31 +22,24 @@ require_once("config/bootstrap.php");
 	</nav>
 
 	<div class="container">
-		<h1 id="status">Retweets Complete: Summary below</h1>
+		<h1 id="status">Likes Complete: Summary below</h1>
 
 		<ul class="list-group">
 			<?php foreach ($accounts as $name => $account) : ?>
-					<?php $response = \Retweetr\TweetRetweeter::execute(new TwitterAPIExchange($account), $_POST['id']); ?>
+					<?php $response = \Retweetr\TweetLiker::execute(new TwitterAPIExchange($account), $_POST['id']); ?>
 					
 					<?php if (!empty($response['errors'])) : ?>
 						<li class="list-group-item list-group-item-danger">
-							Error retweeting on @<?=$name;?>: <br>
+							Error Liking on @<?=$name;?>: <br>
 							<ul>
 								<?php foreach ($response['errors'] as $error) : ?>
 									<li><?= $error['code']; ?> : <?= $error['message']; ?></li>
-									<?php if ($error['code'] == 327) : ?>
-										<?php $redo = \Retweetr\TweetRetweeter::redo($_POST['id']); ?>
-
-										<?php if (empty($redo['errors'])) :?>
-											<li>Successfully unretweeted and retweeted again.</li>
-										<?php endif; ?>
-									<?php endif; ?>
 								<?php endforeach; ?>
 							</ul>
 						</li>
 					<?php else : ?>
 						<li class="list-group-item list-group-item-success">
-							Successfully retweeted by @<?=$name;?>
+							Successfully liked by @<?=$name;?>
 						</li>
 					<?php endif; ?>
 

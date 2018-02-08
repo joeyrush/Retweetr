@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Retweetr\\TweetFetcher' => $baseDir . '/classes/TweetFetcher.php',
+    'Retweetr\\TweetLiker' => $baseDir . '/classes/TweetLiker.php',
     'Retweetr\\TweetRetweeter' => $baseDir . '/classes/TweetRetweeter.php',
     'TwitterAPIExchange' => $vendorDir . '/j7mbo/twitter-api-php/TwitterAPIExchange.php',
 );

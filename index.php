@@ -44,7 +44,13 @@ if (!empty($_POST['username'])) {
 					<div class="mx-auto">
 						<form action="retweet.php" method="POST">
 							<input type="hidden" name="id" value="<?=$tweet['id'];?>">
-							<button type="submit" href="/retweet.php" class="btn btn-info btn-sm">Retweet</button>
+							<button type="submit" class="btn btn-info btn-sm">Retweet</button>
+						</form>	
+					</div>
+					<div class="mx-auto">
+						<form action="like.php" method="POST">
+							<input type="hidden" name="id" value="<?=$tweet['id'];?>">
+							<button type="submit" class="btn btn-info btn-sm">Like</button>
 						</form>	
 					</div>
 				</li>

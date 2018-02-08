@@ -8,6 +8,7 @@ class ComposerStaticInit61d5cce39e1919cfcc1db1bfc34b7a8f
 {
     public static $classMap = array (
         'Retweetr\\TweetFetcher' => __DIR__ . '/../..' . '/classes/TweetFetcher.php',
+        'Retweetr\\TweetLiker' => __DIR__ . '/../..' . '/classes/TweetLiker.php',
         'Retweetr\\TweetRetweeter' => __DIR__ . '/../..' . '/classes/TweetRetweeter.php',
         'TwitterAPIExchange' => __DIR__ . '/..' . '/j7mbo/twitter-api-php/TwitterAPIExchange.php',
     );
