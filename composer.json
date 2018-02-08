@@ -1,0 +1,15 @@
+{
+    "name": "joe/twitter",
+    "authors": [
+        {
+            "name": "Joe-PC",
+            "email": "joe_rushton@hotmail.co.uk"
+        }
+    ],
+    "require": {
+        "j7mbo/twitter-api-php": "^1.0"
+    },
+    "autoload": {
+        "classmap": ["classes"]
+    }
+}
