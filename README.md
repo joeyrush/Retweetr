@@ -15,6 +15,12 @@ Twitters API guidelines (at the time of writing this: 08/02/2018) suggest that a
 5. Enter a twitter username in the input field and click "Get Tweets"
 6. Choose a tweet and be patient, as random delays are put in place between each account to seem a little less automatic
 
+## Usage Notes
+* You may need to bump up the max_execution_time value in your web servers `php.ini` file
+* If the script times out, the engagements will still be sent providing the initial request went through
+* Twitter accounts can receive temporary locks in the form of recaptchas - you will have to manually solve these or find an alternative automated solution
+* If an account has already retweeted a chosen tweet, the script will unretweet and re-retweet which can be useful for making tweets appear at the top of the timeline
+
 ## Credits
 * J7mbo for the twitter/PHP api wrapper: https://github.com/J7mbo/twitter-api-php
 * Bootstrap https://v4-alpha.getbootstrap.com/
